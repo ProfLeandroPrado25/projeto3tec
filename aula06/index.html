@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML</title>
+</head>
+<body>
+    <h1>Reproduzindo áudio</h1>
+        <h2>Primeira forma</h2>
+        <p>Vamos aprender a reproduzir áudios em HTML5</p>
+        <audio src="midia/Do Fundo da Grota - Baitaca - 128 (online-audio-converter.com).ogg" controls autoplay></audio>
+        <h2>Segunda forma</h2>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/Do Fundo da Grota - Baitaca - 128 (online-audio-converter.com).ogg" type="audio/ogg">
+            <source src="midia/Do Fundo da Grota - Baitaca - 128 (online-audio-converter.com).wav" type="audio/wav">
+            <source src="midia/Do Fundo da Grota - Baitaca - 128.mp3" type="audio/mpeg">
+            <!-- mp3 ogg wav -->
+             <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/Do Fundo da Grota - Baitaca - 128.mp3">Clique aqui para baixar o áudio em arquivo MP3</a></p>
+        </audio>
+</body>
+</html>
